@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>calculator</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="app.js" defer></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="display-section">
+				<input value="Click buttons" type="text" id="display" readonly />
+			</div>
+			<div class="input">
+				<div class="row">
+					<button class="long" onclick="buttonClicked('AC')">AC</button>
+					<button onclick="buttonClicked(this.textContent)">DE</button>
+					<button onclick="buttonClicked(this.textContent)">+</button>
+				</div>
+				<div class="row">
+					<button onclick="buttonClicked(this.textContent)">7</button>
+					<button onclick="buttonClicked(this.textContent)">8</button>
+					<button onclick="buttonClicked(this.textContent)">9</button>
+					<button onclick="buttonClicked(this.textContent)">-</button>
+				</div>
+
+				<div class="row">
+					<button onclick="buttonClicked(this.textContent)">4</button>
+					<button onclick="buttonClicked(this.textContent)">5</button>
+					<button onclick="buttonClicked(this.textContent)">6</button>
+					<button onclick="buttonClicked(this.textContent)">*</button>
+				</div>
+				<div class="row">
+					<button onclick="buttonClicked(this.textContent)">1</button>
+					<button onclick="buttonClicked(this.textContent)">2</button>
+					<button onclick="buttonClicked(this.textContent)">3</button>
+					<button onclick="buttonClicked(this.textContent)">/</button>
+				</div>
+				<div class="row">
+					<button onclick="buttonClicked(this.textContent)">0</button>
+					<button onclick="buttonClicked(this.textContent)">.</button>
+					<button class="long" onclick="calculate()">=</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

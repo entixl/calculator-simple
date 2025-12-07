@@ -1,0 +1,47 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100dvh;
+	align-items: center;
+	width: 100%;
+	gap: 3px;
+	background-color: rgb(24, 24, 26);
+}
+#display {
+	/* display: flex; */
+	/* width: auto; */
+	/* flex-direction: column; */
+	/* justify-content: space-between; */
+	background-color: yellow;
+	word-wrap: break-word;
+	text-align: right;
+}
+.row {
+	display: flex;
+	min-width: 50px;
+	min-height: 50px;
+	background-color: red;
+	gap: 3px;
+	justify-content: space-between;
+}
+button {
+	min-width: 100%;
+}
+.long {
+	min-width: 200%;
+	background-color: brown;
+}
+.input {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+	/* align-items: end; */
+}
