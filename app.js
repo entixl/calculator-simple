@@ -14,9 +14,12 @@ function buttonClicked(input) {
 	}
 }
 function calculate() {
+	console.log("guyg");
 	try {
-		eval(display.value);
+		console.log("gumguufyg");
+		display.value = eval(display.value);
 	} catch (e) {
+		console.log(e);
 		display.value = "Error";
 	}
 }
