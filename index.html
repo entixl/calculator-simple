@@ -10,37 +10,50 @@
 	<body>
 		<div class="container">
 			<div class="display-section">
-				<input value="Click buttons" type="text" id="display" readonly />
+				<input
+					value="Click buttons"
+					type="text"
+					class="display"
+					id="previous"
+					readonly
+				/>
+				<input
+					value="Click buttons"
+					type="text"
+					class="display"
+					id="current"
+					readonly
+				/>
 			</div>
 			<div class="input-section">
 				<div class="row">
-					<button class="long" onclick="buttonClicked('AC')">AC</button>
-					<button onclick="buttonClicked(this.textContent)">DE</button>
-					<button onclick="buttonClicked(this.textContent)">+</button>
+					<button class="long" onclick="allClear()">CLEAR</button>
+					<button onclick="deleteEntry()">DE</button>
+					<button onclick="buttonClicked( '+')" class="op">+</button>
 				</div>
 				<div class="row">
-					<button onclick="buttonClicked(this.textContent)">7</button>
-					<button onclick="buttonClicked(this.textContent)">8</button>
-					<button onclick="buttonClicked(this.textContent)">9</button>
-					<button onclick="buttonClicked(this.textContent)">-</button>
+					<button onclick="buttonClicked(7)">7</button>
+					<button onclick="buttonClicked(8)">8</button>
+					<button onclick="buttonClicked(9)">9</button>
+					<button onclick="buttonClicked('-')">-</button>
 				</div>
 
 				<div class="row">
-					<button onclick="buttonClicked(this.textContent)">4</button>
-					<button onclick="buttonClicked(this.textContent)">5</button>
-					<button onclick="buttonClicked(this.textContent)">6</button>
-					<button onclick="buttonClicked(this.textContent)">*</button>
+					<button onclick="buttonClicked(4)">4</button>
+					<button onclick="buttonClicked(5)">5</button>
+					<button onclick="buttonClicked(6)">6</button>
+					<button onclick="buttonClicked('*')" class="op">*</button>
 				</div>
 				<div class="row">
-					<button onclick="buttonClicked(this.textContent)">1</button>
-					<button onclick="buttonClicked(this.textContent)">2</button>
-					<button onclick="buttonClicked(this.textContent)">3</button>
-					<button onclick="buttonClicked(this.textContent)">/</button>
+					<button onclick="buttonClicked(1)">1</button>
+					<button onclick="buttonClicked(2)">2</button>
+					<button onclick="buttonClicked(3)">3</button>
+					<button onclick="buttonClicked('/')">/</button>
 				</div>
 				<div class="row">
-					<button onclick="buttonClicked(this.textContent)">0</button>
-					<button onclick="buttonClicked(this.textContent)">.</button>
-					<button class="long" onclick="calculate()">=</button>
+					<button onclick="buttonClicked(0)">0</button>
+					<button onclick="buttonClicked('.')">.</button>
+					<button class="long" onclick="calculate()">ENTER</button>
 				</div>
 			</div>
 		</div>

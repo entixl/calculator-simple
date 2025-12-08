@@ -19,13 +19,16 @@
 	width: 95%;
 	gap: 2px;
 }
-#display {
+#current {
 	width: 95%;
 	height: 4rem;
 	text-align: right;
 	font-size: larger;
 	font-weight: 600;
-	border-radius: 5%;
+	background-color: rgb(20, 20, 20);
+	color: aliceblue;
+	border: 25%;
+	padding: 20px;
 }
 .display-section,
 .input-section {
@@ -39,11 +42,20 @@ button {
 	flex: 1;
 	height: 4rem;
 	width: 5rem;
-	border-radius: 15%;
 	font-weight: bolder;
 	font-size: large;
 }
 button.long {
 	flex: 2;
 	background-color: rgb(4, 52, 57);
+}
+#previous {
+	height: 2rem;
+	text-align: left;
+	width: 95%;
+	font-weight: 500;
+	background-color: rgba(20, 20, 20, 0.579);
+	color: aliceblue;
+	border: 25%;
+	padding: 5px;
 }
